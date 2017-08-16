@@ -1,6 +1,9 @@
 ---
-# You don't need to edit this file, it's empty on purpose.
-# Edit theme's home layout instead if you wanna make some changes
-# See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-layout: home
+layout: default
+title: Home
+permalink: ./
 ---
+
+[twitch.tv](http://twitch.tv/TheMediumLobster)
+
+[GitHub](http://github.com/Gr34v0/)

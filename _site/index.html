@@ -1,65 +1,76 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<HTMl>
+	<head>
+		<link rel="stylesheet" type="text/css" href="htmlCSS.css" >
+		<title>Prof Page</title>
+		<meta charset="UTF-8">
+	</head>
 
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="viewport" content="width=device-width,maximum-scale=2">
-    <meta name="description" content="TheMediumLobster | Gr34v0 : TheMediumLobster - Shit Software Engineer, even shitter streamer. Just shit, really. Why are you here?
-">
+	<body>
 
-    <link rel="stylesheet" type="text/css" media="screen" href="/assets/css/style.css?v=cdbfb6ff6d50b2176d7e9f762ccb2526b827c060">
+		<h1>
+			Welcome
+		</h1>
 
-<!-- Begin Jekyll SEO tag v2.2.3 -->
-<title>Home | TheMediumLobster Gr34v0</title>
-<meta property="og:title" content="Home" />
-<meta property="og:locale" content="en_US" />
-<meta name="description" content="TheMediumLobster - Shit Software Engineer, even shitter streamer. Just shit, really. Why are you here?" />
-<meta property="og:description" content="TheMediumLobster - Shit Software Engineer, even shitter streamer. Just shit, really. Why are you here?" />
-<link rel="canonical" href="http://localhost:4000/" />
-<meta property="og:url" content="http://localhost:4000/" />
-<meta property="og:site_name" content="TheMediumLobster Gr34v0" />
-<script type="application/ld+json">
-{"@context":"http://schema.org","@type":"WebSite","name":"TheMediumLobster Gr34v0","headline":"Home","description":"TheMediumLobster - Shit Software Engineer, even shitter streamer. Just shit, really. Why are you here?","url":"http://localhost:4000/"}</script>
-<!-- End Jekyll SEO tag -->
+		<button onclick="changeView('clearing')"> Clear TEST Button</button>
 
-  </head>
+		<div id="imageDiv">
 
-  <body>
+			<img src="images/home.png" onclick="changeView('home')" alt="Home Link">
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="http://github.com/pages-themes/slate">View on GitHub</a>
+			<img src="images/information.png" onclick="changeView('info')" alt="Information Link">
 
-          <h1 id="project_title">TheMediumLobster | Gr34v0</h1>
-          <h2 id="project_tagline">TheMediumLobster - Shit Software Engineer, even shitter streamer. Just shit, really. Why are you here?
-</h2>
+			<img src="images/project.jpg" onclick="changeView('project')" alt="Project Link">
 
-          
-        </header>
-    </div>
+		</div>
 
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <p><a href="http://twitch.tv/TheMediumLobster">twitch.tv</a></p>
+		<div id="textDiv"></div>
 
-<p><a href="http://github.com/Gr34v0/">GitHub</a></p>
+		<script type="text/javascript">
+			function changeView(variableContent) {
+				var infoContent;
+				if(variableContent == 'home'){
+					infoContent = document.getElementById('LandingTemp').innerHTML;
+				} else if(variableContent == 'info'){
+					infoContent = document.getElementById('InfoTemp').innerHTML;
+				} else if(variableContent == 'project'){
+					infoContent = document.getElementById('ProjectTemp').innerHTML;
+				} else {
+					infoContent = '';
+				}
+				var content = document.querySelector('#textDiv');
+				//Update template DOM
+				content.innerHTML = infoContent;
+			}
+		</script>
 
-      </section>
-    </div>
+		<template id="InfoTemp">
+			<div id="infoDiv">
+				info info info info info info
+			</div>
+		</template>
 
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        
-        <p class="copyright">TheMediumLobster | Gr34v0 maintained by <a href="http://github.com/pages-themes">pages-themes</a></p>
-        
-        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
+		<template id="LandingTemp">
+			<div id="landingDiv">
+				Landing Landing Landing Landing
+			</div>
+		</template>
 
-    
-  </body>
-</html>
+		<template id="ProjectTemp">
+			<div id="projectDiv">
+				Project Project Project Project
+			</div>
+		</template>
+
+		<br>
+
+		<footer>
+			gr34v0@gmail.com
+		</footer>
+
+		<br>
+		<br>
+
+	</body>
+
+</HTMl>

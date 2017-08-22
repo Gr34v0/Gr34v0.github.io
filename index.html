@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<HTMl>
+	<head>
+		<link rel="stylesheet" type="text/css" href="htmlCSS.css" >
+		<title>Prof Page</title>
+		<meta charset="UTF-8">
+	</head>
+
+	<body>
+
+		<h1>
+			Welcome
+		</h1>
+
+		<button onclick="changeView('clearing')"> Clear TEST Button</button>
+
+		<div id="imageDiv">
+
+			<img src="images/home.png" onclick="changeView('home')" alt="Home Link">
+
+			<img src="images/information.png" onclick="changeView('info')" alt="Information Link">
+
+			<img src="images/project.jpg" onclick="changeView('project')" alt="Project Link">
+
+		</div>
+
+		<div id="textDiv"></div>
+
+		<script type="text/javascript">
+			function changeView(variableContent) {
+				var infoContent;
+				if(variableContent == 'home'){
+					infoContent = document.getElementById('LandingTemp').innerHTML;
+				} else if(variableContent == 'info'){
+					infoContent = document.getElementById('InfoTemp').innerHTML;
+				} else if(variableContent == 'project'){
+					infoContent = document.getElementById('ProjectTemp').innerHTML;
+				} else {
+					infoContent = '';
+				}
+				var content = document.querySelector('#textDiv');
+				//Update template DOM
+				content.innerHTML = infoContent;
+			}
+		</script>
+
+		<template id="InfoTemp">
+			<div id="infoDiv">
+				info info info info info info
+			</div>
+		</template>
+
+		<template id="LandingTemp">
+			<div id="landingDiv">
+				Landing Landing Landing Landing
+			</div>
+		</template>
+
+		<template id="ProjectTemp">
+			<div id="projectDiv">
+				Project Project Project Project
+			</div>
+		</template>
+
+		<br>
+
+		<footer>
+			gr34v0@gmail.com
+		</footer>
+
+		<br>
+		<br>
+
+	</body>
+
+</HTMl>

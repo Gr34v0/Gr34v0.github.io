@@ -1,0 +1,64 @@
+#h1 {
+	color: green;
+	text-align: center;
+}
+
+#h21 {
+	color: orange;
+	text-align: center;
+}
+
+#body{
+	text-align: center;
+}
+
+#h22 {
+	color: red;
+	text-align: center;
+}
+
+#h2 {
+	text-align: center;
+}
+
+#contexTable {
+	padding: 15px;
+	width: 100%;
+}
+
+#home {
+	
+	padding: 15px;
+}
+
+#info {
+	
+	padding: 15px;
+}
+
+#projects {
+	
+	padding: 15px;
+}
+
+#test {
+	
+	padding: 15px;
+}
+
+#section {
+	float: left;
+	max-width: 25%;
+	min-width: 10%;
+	height: 100%;
+	background-color: lightgray;
+}
+
+#git {
+	text-align:center;
+}
+
+body {
+	text-align: center;
+}
+

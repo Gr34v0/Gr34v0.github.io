@@ -4,7 +4,15 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+# [Home](../) #
+
+
+Hi, I'm Christian Greaves, otherwise known as TheMediumLobster and Welcome to my site! I'm a software engineer student/intern and a part-time streamer. 
+
+To learn about my Software Engineering experience: [Resume](resume)
+
+To see my streaming info and PC: [TheMediumLobster](themediumlobster)
+
 
 You can find the source code for the Slate Theme at GitHub:
 [jekyll][jekyll-organization] /
